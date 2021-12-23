@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sectionBar">#ffcc66</color>
+    <color name="background_1">#ffff99</color>
+    <color name="background_2">#ffffcc</color>
+    <color name="background_3">#cc9966</color>
+    <color name="list_background1">#cccccc</color>
+
+
+
+    <color name="text_heading1">#660000</color>
+
+</resources>

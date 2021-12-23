@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/media/naman/New Volume/TestApp_NewDesing01/app/libs/jtransforms-2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9e52124b670340d47844a734e36765c3bc11b7f3">
+        <dex dex="/media/naman/New Volume/TestApp_NewDesing01/app/build/intermediates/pre-dexed/debug/jtransforms-2.4_85d718ad05e6148088170265394b6bee755c68c5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/naman/New Volume/TestApp_NewDesing02/app/libs/jtransforms-2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9e52124b670340d47844a734e36765c3bc11b7f3">
+        <dex dex="/media/naman/New Volume/TestApp_NewDesing02/app/build/intermediates/pre-dexed/debug/jtransforms-2.4_87d36c68677b2179192d483501559d630484461d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/naman/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="/media/naman/New Volume/TestApp_NewDesing01/app/build/intermediates/pre-dexed/debug/support-annotations-25.2.0_29fe68d24cb4b8bf397c023c7accd47e61cc4457.jar" />
+    </item>
+
+</items>

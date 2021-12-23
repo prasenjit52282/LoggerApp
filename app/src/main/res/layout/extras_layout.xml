@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    android:layout_marginTop="@dimen/sectionbar_height"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/recordTag"
+                    android:layout_weight="1"
+                    android:id="@+id/txtRecord" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:text="@string/gpsTag"
+                    android:checked="true"
+                    android:layout_weight="1"
+                    android:id="@+id/checkGPS" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:text="@string/accTag"
+                    android:checked="true"
+                    android:layout_weight="1"
+                    android:id="@+id/checkACC" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:text="@string/laccTag"
+                    android:checked="true"
+                    android:id="@+id/checkLACC" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:text="@string/gyrTag"
+                    android:checked="true"
+                    android:id="@+id/checkGYR" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:text="@string/comTag"
+                    android:checked="true"
+                    android:id="@+id/checkCOM" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:text="@string/gsmTag"
+                    android:checked="true"
+                    android:layout_weight="1"
+                    android:id="@+id/checkGSM" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:text="@string/wifiTag"
+                    android:checked="true"
+                    android:layout_weight="1"
+                    android:id="@+id/checkWiFi" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:text="Light"
+                    android:checked="true"
+                    android:id="@+id/checkLGT" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="197dp"
+                    android:layout_height="42dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:id="@+id/txtStatus"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="215dp"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_accel"
+                        android:layout_width="51dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="@string/startTag"
+                        android:layout_weight="1"
+                        android:textSize="9sp"
+                        android:id="@+id/btnStartAll" />
+
+                    <ToggleButton
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:enabled="false"
+                        android:id="@+id/btnPause"
+                        android:layout_weight="1"
+                        android:textOff="Pause"
+                        android:textSize="9sp"
+                        android:textOn="Continue" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="@string/stopTag"
+                        android:enabled="false"
+                        android:layout_weight="1"
+                        android:textSize="9sp"
+                        android:id="@+id/btnStopAll" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_light"
+                        android:layout_width="51dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="@string/startTag"
+                        android:layout_weight="1"
+                        android:textSize="9sp"
+                        android:id="@+id/btnlightStartAll" />
+
+                    <ToggleButton
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:enabled="false"
+                        android:id="@+id/btnlightPause"
+                        android:layout_weight="1"
+                        android:textOff="Pause"
+                        android:textSize="9sp"
+                        android:textOn="Continue" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="@string/stopTag"
+                        android:enabled="false"
+                        android:textSize="9sp"
+                        android:layout_weight="1"
+                        android:id="@+id/btnlightStopAll" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_sound"
+                        android:layout_width="51dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="@string/startTag"
+                        android:textSize="9sp"
+                        android:layout_weight="1"
+                        android:id="@+id/btnsoundStartAll"
+                        android:gravity="center" />
+
+                    <ToggleButton
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:enabled="false"
+                        android:id="@+id/btnsoundPause"
+                        android:layout_weight="1"
+                        android:textSize="9sp"
+                        android:textOff="Pause"
+                        android:textOn="Continue" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:textSize="9sp"
+                        android:text="@string/stopTag"
+                        android:enabled="false"
+                        android:layout_weight="1"
+                        android:id="@+id/btnsoundStopAll" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text=""
+                        android:id="@+id/txtError" />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/imgLM2"
+                    android:src="@drawable/btn_pothole0"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:text="Market"
+                    android:id="@+id/btnLM2" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/imgLM1"
+                    android:src="@drawable/btn_bumper0"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:text="Highway"
+                    android:id="@+id/btnLM1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/imgLM3"
+                    android:src="@drawable/btn_busstop0"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:text="Normal City"
+                    android:id="@+id/btnLM3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/imgLM4"
+                    android:src="@drawable/btn_junction0"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:text="Outskirt"
+                    android:id="@+id/btnLM4" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/imgLM5"
+                    android:src="@drawable/btn_busyroad0"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:text="Lonely"
+                    android:id="@+id/btnLM5" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/imgLM6"
+                    android:src="@drawable/btn_uturn"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:text="School/College"
+                    android:id="@+id/btnLM6" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/imgLM7"
+                    android:src="@drawable/btn_turn0"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:text="Hospital"
+                    android:id="@+id/btnLM7" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/imgLM9"
+                    android:src="@drawable/btn_islend0"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:text="Turn"
+                    android:id="@+id/btnLM9" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/imgLM10"
+                    android:src="@drawable/btn_dummy0"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:text="Signal"
+                    android:id="@+id/btnLM10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/imgLM11"
+                    android:src="@drawable/btn_dummy0"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:text="Bus Stop"
+                    android:id="@+id/btnLM11" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/imgLM13"
+                    android:src="@drawable/btn_busyroad0"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:text="Busy Rd"
+                    android:id="@+id/btnLM13" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/imgLM12"
+                    android:src="@drawable/btn_dummy0"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:text="Rough Rd"
+                    android:id="@+id/btnLM12" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GPSLoggerAndBusFinder</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="sectionTag1">Logger</string>
+    <string name="sectionTag2">BusFinder</string>
+    <string name="sectionTag3">Logger</string>
+
+    <string name="gpsTag">GPS Location</string>
+    <string name="accTag">Accelerometer</string>
+    <string name="gyrTag">Gyroscope</string>
+    <string name="laccTag">Linear A.Meter</string>
+    <string name="comTag">Compass</string>
+    <string name="gsmTag">GSM</string>
+
+    <string name="gpsTagShort">GPS</string>
+    <string name="accTagShort">ACC</string>
+    <string name="gyrTagShort">GYR</string>
+    <string name="laccTagShort">LAC</string>
+    <string name="comTagShort">COM</string>
+    <string name="gsmTagShort">GSM</string>
+
+    <string name="recordTag">Record</string>
+    <string name="stopTag">Stop</string>
+    <string name="startTag">Start</string>
+    <string name="pauseTag">Pause</string>
+    <string name="continuteTag">Continue</string>
+
+    <string name="wifiTag">WiFi</string>
+    <string name="alert_dialog_rating">Rating</string>
+    <string name="lmTag1">Bumper</string>
+    <string name="lmTag2">Pothole</string>
+    <string name="lmTag3">BusStop</string>
+    <string name="lmTag4">Junction</string>
+    <string name="lmTag5">BusyRoad</string>
+    <string name="lmTag6">BrokeRoad</string>
+    <string name="lmTag7">Turn</string>
+    <string name="lmTag8">OverTake</string>
+    <string name="lmTag9">Island</string>
+    <string name="lmTag10">Dummy</string>
+
+    <string name="title_activity_bus_finder">Bus Finder Beta</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="sourTag">Source</string>
+    <string name="destTag">Destination</string>
+    <string name="timeTag">Time</string>
+    <string name="findBtn">Find Route</string>
+    <string name="resetBtn">Reset</string>
+    <string name="mapInfo">Long press a place for selecting from map</string>
+
+    <string name="busfinderFrag_tag">busfinder</string>
+    <string name="loggerFrag_tag">logger</string>
+    <string name="extrasFrag_tag">extras</string>
+
+    <string-array name="stops">
+        <item>Prantika</item>
+        <item>Durgapur</item>
+        <item>RailwayStation</item>
+        <item>Stop4</item>
+        <item>Stop5</item>
+    </string-array>
+
+
+</resources>
